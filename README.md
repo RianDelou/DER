@@ -7,8 +7,10 @@
   <p>Tema: Sistema de Gestão de Vendas Online</p>
 </h2>
 
-<h3> Explicando a minha lógica para esse projeto </h3>
+<h3> Explicando a minha lógica para esse projeto 
 <p>recomendo a leitura com a visualização do diagrama</p>
+</h3>
+
 
 <p>Primeiramente, criei a entidade <b>cliente</b> com os seguintes atributos: nomeCliente (Um atributo simples), telefone (Um atributo multivalorado, pois o cliente pode ter vários telefones), idade (atributo simples), e-mail (atributo simples) e <b>senha (atributo chave)</b></p>
 <p>Além disso, a entidade cliente ela é uma superclasse, possuindo dois subtipos: <b>pessoa_física</b> e <b>pessoa_juridica</b>. Ou seja, ela possui uma especialização para esses dois subtipos. A pessoa juridica vai ter um benefício que irei citar posteriormente.</p>
