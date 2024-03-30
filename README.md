@@ -7,6 +7,18 @@
   <p>Tema: Sistema de Gestão de Vendas Online</p>
 </h2>
 
+<h3>Mudanças que fiz (os parágrafos em strong são as análises do professor): <h3>
+<p><b>como saber qual o valorProduto está associado a qual produto?</b></p>
+<p>Para isso, criei uma outra chave para o valorProduto, que seria o idProduto. Isso faz com que o valor do produto tenha uma relação direta com o produto, conseguindo ter acesso a cada produto e armazenando os valores para cada um. Porém, percebi que valorProduto é na verdade uma entidade fraca! então alterei para ela ser uma entidade fraca.</p>
+<p><b>A notação clássica está misturada com a mín-máx.</b></p>
+<p>Não alterei a notação, pois ela pode ser considerada tanto assim: (1,n) (1,1), quanto o inverso: (1,1) (1,n)</p>
+<p><b>Várias entidades poderiam ser agrupadas.</b></p>
+<p>Não alterei nada em relação a isso.</p>
+<p><b>Telefone (entidade fraca) precisa de um cliente (entidade forte), mas endereço não precisa (você colocou como entidade forte) e ao mesno tempo cardinalidade mín igual a 1 (indicando entidade fraca ou dependente da existência de outra entidade para ser cadastrada na base).</b></p>
+<p> Para solucionar o problema da entidade endereço, fiz com que ela virasse uma entidade fraca, para seguir a mesma lógica da entidade telefoneCliente. Depois disso, pensei na primeira análise que o professor fez: <b>como saber qual o valorProduto está associado a qual produto? </b> então, como eu posso saber qual endereço está associada a qual cliente? para solucionar isso, fiz a mesma lógica que apliquei na entidade valorProduto, fiz outra chave para a entidade endereço: idCliente. Com isso, conseguimos ter acesso a cada cliente e armazenar o endereço para cada um dos clientes. Além disso, fiz a mesma coisa para a entidade telefone cliente! </p>
+<p>Finalizando, retirei o atributo "endereço" do pedido, pois o endereço tem que ser apresentado pelo cliente, ou seja, não precisamos apresentar novamente para efetuar o pedido.</p>
+
+
 <h3> Explicando a minha lógica para esse projeto 
 <p>{recomendo a leitura com a visualização do diagrama}</p>
 </h3>
