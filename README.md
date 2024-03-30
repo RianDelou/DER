@@ -7,7 +7,7 @@
   <p>Tema: Sistema de Gestão de Vendas Online</p>
 </h2>
 
-<h3>Mudanças que fiz (os parágrafos em strong são as análises do professor): <h3>
+<h3>Mudanças que fiz (os parágrafos em strong são as análises do professor): </h3>h3>
 <p><b>como saber qual o valorProduto está associado a qual produto?</b></p>
 <p>Para isso, criei uma outra chave para o valorProduto, que seria o idProduto. Isso faz com que o valor do produto tenha uma relação direta com o produto, conseguindo ter acesso a cada produto e armazenando os valores para cada um. Porém, percebi que valorProduto é na verdade uma entidade fraca! então alterei para ela ser uma entidade fraca.</p>
 <p><b>A notação clássica está misturada com a mín-máx.</b></p>
