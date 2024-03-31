@@ -7,7 +7,7 @@
   <p>Tema: Sistema de Gestão de Vendas Online</p>
 </h2>
 
-<h3>Mudanças que fiz (os parágrafos em strong são as análises do professor): <h3>
+<h3>Mudanças que fiz (os parágrafos em strong são as análises do professor): </h3>
 <p><b>como saber qual o valorProduto está associado a qual produto?</b></p>
 <p>Para solucionar esse problema, eu analisei a entidade: "valorProduto" e percebi que poderia agrupar ela com a entidade produto. Foi isso que fiz! transformei a entidade valorProduto em um atributo da entidade produto: atributo simples "valor".</p>
 <p><b>A notação clássica está misturada com a mín-máx.</b></p>
