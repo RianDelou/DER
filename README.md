@@ -11,13 +11,11 @@
 <p><b>como saber qual o valorProduto está associado a qual produto?</b></p>
 <p>Para solucionar esse problema, eu analisei a entidade: "valorProduto" e percebi que poderia agrupar ela com a entidade produto. Foi isso que fiz! transformei a entidade valorProduto em um atributo da entidade produto: atributo simples "valor".</p>
 <p><b>A notação clássica está misturada com a mín-máx.</b></p>
-<p>Para solucionar isso, mudei a cardinalidade de todas as entidades fracas para: (0,n). Respectivamente: telefoneCliente e desconto. Agora, um cliente pode possuir nenhum ou muitos telefone e um pedido pode possuir nenhum ou muitos descontos.</p>
+<p>Para solucionar isso, tirei todas as entidades fracas.</p>
 <p><b>Várias entidades poderiam ser agrupadas.</b></p>
 <p>Para solucionar isso, agrupei muitas entidades! como: endereço, valorProduto, e pagamento. Fiz o agrupamento delas pelo fato de sua cardinalidade no relacionamento ser (1,1), desse jeito eu preciso transformar em atributo, para o diagrama ficar mais tranquilo de manipular na linguagem de consulta (SQL)</p>
 <p><b>Telefone (entidade fraca) precisa de um cliente (entidade forte), mas endereço não precisa (você colocou como entidade forte) e ao mesno tempo cardinalidade mín igual a 1 (indicando entidade fraca ou dependente da existência de outra entidade para ser cadastrada na base).</b></p>
 <p>Para solucionar isso, eu removi a entidade endereço! fiz a remoção pelo fato de ser (1,1), pois cada cliente tem seu próprio endereço, seu próprio apartamento... Além de que na minha lógica ela não pode ter cardinalidade (0,1), pois como que eu irei realizar o pedido, sem ter o endereço do usuário? então ela deve ser obrigatória.</p>
-<p>Para finalizar, outros detalhes alterados foram: alguns atributos, a entidade cupomDesconto não é mais entidade fraca, desconto e avaliação virou entidade fraca, pelo fato de ser (0,n), dessa forma eu falo que desconto e avaliação é uma entidade fraca, pois ela é opcional e dependente de uma entidade forte. Mesma coisa com a entidade fraca telefoneCliente por exemplo.</p>
-
 
 <h3> Explicando a minha lógica para esse projeto 
 <p>{recomendo a leitura com a visualização do diagrama}</p>
